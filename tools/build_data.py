@@ -1,0 +1,188 @@
+# Builds data.js from credits.json + the car catalogue below.
+# Each car: brand, model, generation label, chassis/body code, production years,
+# facelift year, country, parent group, body, segment, difficulty (1-3).
+import json, os, re
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+C = lambda brand, model, gen, code, y0, y1, fl, country, group, body, seg, diff: dict(
+    brand=brand, model=model, gen=gen, code=code, y0=y0, y1=y1, facelift=fl, country=country,
+    group=group, body=body, seg=seg, diff=diff)
+
+CARS = {
+    # --- Almanya ---
+    "vw-golf-2":        C("Volkswagen", "Golf", "2. nesil", "Mk2 (19E)", 1983, 1992, 1987, "Almanya", "Volkswagen Grubu", "hatchback", "C", 3),
+    "vw-golf-7":        C("Volkswagen", "Golf", "7. nesil", "Mk7 (5G)", 2012, 2020, 2017, "Almanya", "Volkswagen Grubu", "hatchback", "C", 2),
+    "vw-golf-8":        C("Volkswagen", "Golf", "8. nesil", "Mk8 (CD1)", 2019, None, 2024, "Almanya", "Volkswagen Grubu", "hatchback", "C", 3),
+    "vw-polo-6":        C("Volkswagen", "Polo", "6. nesil", "AW", 2017, None, 2021, "Almanya", "Volkswagen Grubu", "hatchback", "B", 2),
+    "vw-passat-b8":     C("Volkswagen", "Passat", "8. nesil", "B8 (3G)", 2014, 2023, 2019, "Almanya", "Volkswagen Grubu", "sedan", "D", 2),
+    "vw-tiguan-2":      C("Volkswagen", "Tiguan", "2. nesil", "AD1", 2016, 2024, 2020, "Almanya", "Volkswagen Grubu", "SUV", "C-SUV", 2),
+    "vw-troc":          C("Volkswagen", "T-Roc", "1. nesil", "A1", 2017, None, 2022, "Almanya", "Volkswagen Grubu", "SUV", "B-SUV", 2),
+    "vw-beetle-a5":     C("Volkswagen", "Beetle", "2. nesil", "A5 (5C1)", 2011, 2019, 2016, "Almanya", "Volkswagen Grubu", "hatchback", "C", 1),
+    "audi-a3-8v":       C("Audi", "A3", "3. nesil", "8V", 2012, 2020, 2016, "Almanya", "Volkswagen Grubu", "hatchback", "C", 3),
+    "audi-a4-b9":       C("Audi", "A4", "5. nesil", "B9 (8W)", 2015, 2024, 2019, "Almanya", "Volkswagen Grubu", "sedan", "D", 3),
+    "audi-q7-4m":       C("Audi", "Q7", "2. nesil", "4M", 2015, None, 2019, "Almanya", "Volkswagen Grubu", "SUV", "E-SUV", 2),
+    "porsche-911-992":  C("Porsche", "911", "8. nesil", "992", 2019, None, 2024, "Almanya", "Volkswagen Grubu", "spor", "S", 2),
+    "bmw-3-e30":        C("BMW", "3 Serisi", "2. nesil", "E30", 1982, 1994, 1987, "Almanya", "BMW Grubu", "sedan", "D", 2),
+    "bmw-3-g20":        C("BMW", "3 Serisi", "7. nesil", "G20", 2019, None, 2022, "Almanya", "BMW Grubu", "sedan", "D", 2),
+    "bmw-5-g30":        C("BMW", "5 Serisi", "7. nesil", "G30", 2017, 2023, 2020, "Almanya", "BMW Grubu", "sedan", "E", 3),
+    "bmw-x5-g05":       C("BMW", "X5", "4. nesil", "G05", 2018, None, 2023, "Almanya", "BMW Grubu", "SUV", "E-SUV", 2),
+    "mini-hatch-f56":   C("MINI", "Cooper", "3. nesil", "F56", 2014, 2024, 2018, "İngiltere", "BMW Grubu", "hatchback", "B", 1),
+    "mercedes-e-w124":  C("Mercedes-Benz", "E-Serisi", "W124", "W124", 1984, 1997, 1993, "Almanya", "Mercedes-Benz Grubu", "sedan", "E", 2),
+    "mercedes-a-w177":  C("Mercedes-Benz", "A-Serisi", "4. nesil", "W177", 2018, None, 2022, "Almanya", "Mercedes-Benz Grubu", "hatchback", "C", 2),
+    "mercedes-c-w205":  C("Mercedes-Benz", "C-Serisi", "4. nesil", "W205", 2014, 2021, 2018, "Almanya", "Mercedes-Benz Grubu", "sedan", "D", 2),
+    "mercedes-e-w213":  C("Mercedes-Benz", "E-Serisi", "5. nesil", "W213", 2016, 2023, 2020, "Almanya", "Mercedes-Benz Grubu", "sedan", "E", 3),
+    "opel-corsa-f":     C("Opel", "Corsa", "6. nesil", "F", 2019, None, 2023, "Almanya", "Stellantis", "hatchback", "B", 2),
+    "opel-astra-k":     C("Opel", "Astra", "5. nesil", "K", 2015, 2021, 2019, "Almanya", "Stellantis", "hatchback", "C", 2),
+    "ford-puma-2":      C("Ford", "Puma", "2. nesil", "J2K", 2019, None, 2024, "ABD", "Ford", "SUV", "B-SUV", 2),
+    "ford-focus-4":     C("Ford", "Focus", "4. nesil", "C519", 2018, 2025, 2022, "ABD", "Ford", "hatchback", "C", 3),
+    "ford-kuga-3":      C("Ford", "Kuga", "3. nesil", "C482", 2019, None, 2023, "ABD", "Ford", "SUV", "C-SUV", 2),
+    "ford-mustang-s550":C("Ford", "Mustang", "6. nesil", "S550", 2015, 2023, 2018, "ABD", "Ford", "spor", "S", 1),
+    # --- Fransa ---
+    "renault-12":       C("Renault", "12", "1. nesil", "R1170", 1969, 1980, 1975, "Fransa", "Renault Grubu", "sedan", "C", 2),
+    "renault-clio-4":   C("Renault", "Clio", "4. nesil", "X98", 2012, 2019, 2016, "Fransa", "Renault Grubu", "hatchback", "B", 2),
+    "renault-clio-5":   C("Renault", "Clio", "5. nesil", "BJA", 2019, None, 2023, "Fransa", "Renault Grubu", "hatchback", "B", 3),
+    "renault-megane-4": C("Renault", "Mégane", "4. nesil", "BFB", 2016, 2023, 2020, "Fransa", "Renault Grubu", "hatchback", "C", 2),
+    "renault-taliant":  C("Renault", "Taliant", "1. nesil", "LJL", 2021, None, None, "Fransa", "Renault Grubu", "sedan", "B", 2),
+    "dacia-duster-2":   C("Dacia", "Duster", "2. nesil", "HM", 2017, 2024, 2021, "Romanya", "Renault Grubu", "SUV", "B-SUV", 1),
+    "dacia-sandero-3":  C("Dacia", "Sandero", "3. nesil", "DJF", 2020, None, 2022, "Romanya", "Renault Grubu", "hatchback", "B", 2),
+    "peugeot-208-2":    C("Peugeot", "208", "2. nesil", "P21", 2019, None, 2023, "Fransa", "Stellantis", "hatchback", "B", 2),
+    "peugeot-2008-2":   C("Peugeot", "2008", "2. nesil", "P24", 2019, None, 2023, "Fransa", "Stellantis", "SUV", "B-SUV", 2),
+    "peugeot-3008-2":   C("Peugeot", "3008", "2. nesil", "P84", 2016, 2023, 2020, "Fransa", "Stellantis", "SUV", "C-SUV", 2),
+    "citroen-c3-3":     C("Citroën", "C3", "3. nesil", "SX", 2016, 2024, 2020, "Fransa", "Stellantis", "hatchback", "B", 2),
+    # --- İtalya ---
+    "fiat-131":         C("Fiat", "131 / Murat 131", "1. seri", "131", 1974, 1984, 1978, "İtalya", "Stellantis", "sedan", "D", 3),
+    "fiat-500":         C("Fiat", "500", "2007 serisi", "312", 2007, 2024, 2015, "İtalya", "Stellantis", "hatchback", "A", 1),
+    "fiat-linea":       C("Fiat", "Linea", "1. nesil", "323", 2007, 2018, 2012, "İtalya", "Stellantis", "sedan", "C", 2),
+    "fiat-egea":        C("Fiat", "Egea / Tipo", "1. nesil", "356", 2015, None, 2020, "İtalya", "Stellantis", "hatchback", "C", 1),
+    "alfa-giulia-952":  C("Alfa Romeo", "Giulia", "2. nesil", "952", 2016, None, 2022, "İtalya", "Stellantis", "sedan", "D", 2),
+    "lambo-huracan":    C("Lamborghini", "Huracán", "1. nesil", "LB724", 2014, 2024, 2019, "İtalya", "Volkswagen Grubu", "spor", "S", 2),
+    "jeep-wrangler-jl": C("Jeep", "Wrangler", "4. nesil", "JL", 2018, None, 2023, "ABD", "Stellantis", "SUV", "J", 1),
+    # --- Türkiye ---
+    "tofas-sahin":      C("Tofaş", "Şahin", "", "131", 1985, 2002, 1993, "Türkiye", "Tofaş (Koç-Stellantis)", "sedan", "D", 1),
+    "tofas-dogan":      C("Tofaş", "Doğan", "", "131", 1985, 2002, 1993, "Türkiye", "Tofaş (Koç-Stellantis)", "sedan", "D", 2),
+    "tofas-kartal":     C("Tofaş", "Kartal", "", "131 Panorama", 1985, 2002, 1993, "Türkiye", "Tofaş (Koç-Stellantis)", "station wagon", "D", 2),
+    "togg-t10x":        C("Togg", "T10X", "1. nesil", "T10X", 2023, None, None, "Türkiye", "Togg", "SUV", "C-SUV", 1),
+    # --- Asya ---
+    "toyota-corolla-e210": C("Toyota", "Corolla", "12. nesil", "E210", 2018, None, 2022, "Japonya", "Toyota Grubu", "hatchback", "C", 2),
+    "toyota-yaris-xp210":  C("Toyota", "Yaris", "4. nesil", "XP210", 2020, None, 2024, "Japonya", "Toyota Grubu", "hatchback", "B", 2),
+    "toyota-chr-1":     C("Toyota", "C-HR", "1. nesil", "AX10", 2016, 2023, 2019, "Japonya", "Toyota Grubu", "SUV", "C-SUV", 1),
+    "toyota-rav4-xa50": C("Toyota", "RAV4", "5. nesil", "XA50", 2018, None, 2022, "Japonya", "Toyota Grubu", "SUV", "C-SUV", 2),
+    "toyota-supra-a90": C("Toyota", "GR Supra", "5. nesil", "A90", 2019, None, 2022, "Japonya", "Toyota Grubu", "spor", "S", 2),
+    "nissan-qashqai-j11": C("Nissan", "Qashqai", "2. nesil", "J11", 2014, 2021, 2017, "Japonya", "Renault-Nissan-Mitsubishi", "SUV", "C-SUV", 2),
+    "nissan-gtr-r35":   C("Nissan", "GT-R", "R35", "R35", 2007, 2025, 2017, "Japonya", "Renault-Nissan-Mitsubishi", "spor", "S", 2),
+    "mazda-mx5-nd":     C("Mazda", "MX-5", "4. nesil", "ND", 2015, None, 2023, "Japonya", "Mazda", "spor", "S", 2),
+    "hyundai-i20":      C("Hyundai", "i20", "3. nesil", "BC3", 2020, None, 2023, "Güney Kore", "Hyundai Motor Grubu", "hatchback", "B", 2),
+    "hyundai-tucson-nx4": C("Hyundai", "Tucson", "4. nesil", "NX4", 2020, None, 2024, "Güney Kore", "Hyundai Motor Grubu", "SUV", "C-SUV", 1),
+    "hyundai-kona-1":   C("Hyundai", "Kona", "1. nesil", "OS", 2017, 2023, 2020, "Güney Kore", "Hyundai Motor Grubu", "SUV", "B-SUV", 2),
+    "kia-sportage-ql":  C("Kia", "Sportage", "4. nesil", "QL", 2015, 2021, 2018, "Güney Kore", "Hyundai Motor Grubu", "SUV", "C-SUV", 2),
+    "mg-zs-1":          C("MG", "ZS", "1. nesil", "ZS11", 2017, None, 2020, "Çin", "SAIC Motor", "SUV", "B-SUV", 2),
+    "chery-tiggo8":     C("Chery", "Tiggo 8 Pro", "1. nesil", "T18", 2020, None, 2023, "Çin", "Chery", "SUV", "D-SUV", 2),
+    "byd-seal":         C("BYD", "Seal", "1. nesil", "EA1", 2022, None, 2025, "Çin", "BYD", "sedan", "D", 2),
+    # --- diğer ---
+    "skoda-octavia-3":  C("Škoda", "Octavia", "3. nesil", "5E", 2012, 2020, 2017, "Çekya", "Volkswagen Grubu", "sedan", "C", 3),
+    "skoda-superb-3":   C("Škoda", "Superb", "3. nesil", "3V", 2015, 2023, 2019, "Çekya", "Volkswagen Grubu", "sedan", "D", 3),
+    "cupra-formentor":  C("Cupra", "Formentor", "1. nesil", "KM7", 2020, None, 2024, "İspanya", "Volkswagen Grubu", "SUV", "C-SUV", 2),
+    "volvo-xc90-2":     C("Volvo", "XC90", "2. nesil", "SPA", 2014, None, 2019, "İsveç", "Geely", "SUV", "E-SUV", 1),
+    "volvo-xc60-2":     C("Volvo", "XC60", "2. nesil", "SPA", 2017, None, 2021, "İsveç", "Geely", "SUV", "D-SUV", 2),
+    "rr-evoque-l551":   C("Range Rover", "Evoque", "2. nesil", "L551", 2019, None, 2023, "İngiltere", "Tata Motors (JLR)", "SUV", "C-SUV", 2),
+    "lr-defender-l663": C("Land Rover", "Defender", "2. nesil", "L663", 2020, None, None, "İngiltere", "Tata Motors (JLR)", "SUV", "J", 1),
+    "tesla-model-3":    C("Tesla", "Model 3", "1. nesil", "Highland öncesi", 2017, 2023, None, "ABD", "Tesla", "sedan", "D", 2),
+    # --- v3 eklenenler ---
+    "vw-golf-5":        C("Volkswagen", "Golf", "5. nesil", "Mk5 (1K)", 2003, 2008, None, "Almanya", "Volkswagen Grubu", "hatchback", "C", 2),
+    "vw-golf-6":        C("Volkswagen", "Golf", "6. nesil", "Mk6 (5K)", 2008, 2012, None, "Almanya", "Volkswagen Grubu", "hatchback", "C", 2),
+    "vw-passat-b6":     C("Volkswagen", "Passat", "6. nesil", "B6 (3C)", 2005, 2010, None, "Almanya", "Volkswagen Grubu", "sedan", "D", 2),
+    "vw-passat-b7":     C("Volkswagen", "Passat", "7. nesil", "B7 (3C)", 2010, 2014, None, "Almanya", "Volkswagen Grubu", "sedan", "D", 2),
+    "vw-polo-5":        C("Volkswagen", "Polo", "5. nesil", "6R/6C", 2009, 2017, 2014, "Almanya", "Volkswagen Grubu", "hatchback", "B", 2),
+    "vw-jetta-6":       C("Volkswagen", "Jetta", "6. nesil", "A6 (1B)", 2010, 2018, 2014, "Almanya", "Volkswagen Grubu", "sedan", "C", 2),
+    "vw-scirocco-3":    C("Volkswagen", "Scirocco", "3. nesil", "13", 2008, 2017, 2014, "Almanya", "Volkswagen Grubu", "coupe", "C", 2),
+    "vw-tiguan-1":      C("Volkswagen", "Tiguan", "1. nesil", "5N", 2007, 2016, 2011, "Almanya", "Volkswagen Grubu", "SUV", "C-SUV", 2),
+    "vw-caddy-3":       C("Volkswagen", "Caddy", "3. nesil", "2K", 2003, 2020, 2010, "Almanya", "Volkswagen Grubu", "van", "LCV", 2),
+    "renault-megane-3": C("Renault", "Mégane", "3. nesil", "X95", 2008, 2016, 2012, "Fransa", "Renault Grubu", "hatchback", "C", 2),
+    "renault-fluence":  C("Renault", "Fluence", "1. nesil", "L38", 2009, 2016, 2013, "Fransa", "Renault Grubu", "sedan", "C", 1),
+    "renault-clio-3":   C("Renault", "Clio", "3. nesil", "X85", 2005, 2012, 2009, "Fransa", "Renault Grubu", "hatchback", "B", 2),
+    "renault-captur-1": C("Renault", "Captur", "1. nesil", "J87", 2013, 2019, 2017, "Fransa", "Renault Grubu", "SUV", "B-SUV", 2),
+    "renault-kangoo-2": C("Renault", "Kangoo", "2. nesil", "X61", 2008, 2021, 2013, "Fransa", "Renault Grubu", "van", "LCV", 2),
+    "renault-symbol-2": C("Renault", "Symbol", "2. nesil", "L35", 2008, 2012, None, "Fransa", "Renault Grubu", "sedan", "B", 3),
+    "fiat-grande-punto":C("Fiat", "Grande Punto", "3. nesil", "199", 2005, 2018, 2009, "İtalya", "Stellantis", "hatchback", "B", 2),
+    "fiat-doblo-2":     C("Fiat", "Doblò", "2. nesil", "263", 2010, 2022, 2015, "İtalya", "Stellantis", "van", "LCV", 1),
+    "fiat-tempra":      C("Fiat", "Tempra", "1. nesil", "159", 1990, 1999, None, "İtalya", "Stellantis", "sedan", "C", 2),
+    "fiat-palio-1":     C("Fiat", "Palio", "1. nesil", "178", 1996, 2004, 2001, "İtalya", "Stellantis", "hatchback", "B", 2),
+    "opel-astra-h":     C("Opel", "Astra", "8. nesil", "H (A04)", 2004, 2014, 2007, "Almanya", "Stellantis", "hatchback", "C", 2),
+    "opel-astra-j":     C("Opel", "Astra", "9. nesil", "J (P10)", 2009, 2015, 2012, "Almanya", "Stellantis", "hatchback", "C", 2),
+    "opel-corsa-d":     C("Opel", "Corsa", "4. nesil", "D (S07)", 2006, 2014, 2010, "Almanya", "Stellantis", "hatchback", "B", 2),
+    "opel-corsa-e":     C("Opel", "Corsa", "5. nesil", "E (X15)", 2014, 2019, None, "Almanya", "Stellantis", "hatchback", "B", 2),
+    "opel-vectra-b":    C("Opel", "Vectra", "2. nesil", "B (J96)", 1995, 2002, 1999, "Almanya", "Stellantis", "sedan", "D", 2),
+    "opel-insignia-a":  C("Opel", "Insignia", "1. nesil", "A (G09)", 2008, 2017, 2013, "Almanya", "Stellantis", "sedan", "D", 2),
+    "ford-focus-2":     C("Ford", "Focus", "2. nesil", "C307", 2004, 2011, 2008, "ABD", "Ford", "sedan", "C", 2),
+    "ford-focus-3":     C("Ford", "Focus", "3. nesil", "C346", 2010, 2018, 2014, "ABD", "Ford", "hatchback", "C", 2),
+    "ford-mondeo-4":    C("Ford", "Mondeo", "4. nesil", "BA7", 2007, 2014, 2010, "ABD", "Ford", "sedan", "D", 2),
+    "ford-fiesta-7":    C("Ford", "Fiesta", "7. nesil", "B479", 2017, 2023, 2022, "ABD", "Ford", "hatchback", "B", 2),
+    "ford-ranger-t6":   C("Ford", "Ranger", "3. nesil", "T6", 2011, 2022, 2015, "ABD", "Ford", "pickup", "pickup", 2),
+    "toyota-auris-1":   C("Toyota", "Auris", "1. nesil", "E150", 2006, 2012, 2010, "Japonya", "Toyota", "hatchback", "C", 2),
+    "toyota-corolla-e150": C("Toyota", "Corolla", "10. nesil", "E150", 2006, 2013, 2010, "Japonya", "Toyota", "sedan", "C", 2),
+    "bmw-3-e90":        C("BMW", "3 Serisi", "5. nesil", "E90", 2005, 2012, 2008, "Almanya", "BMW Grubu", "sedan", "D", 2),
+    "bmw-3-f30":        C("BMW", "3 Serisi", "6. nesil", "F30", 2011, 2019, 2015, "Almanya", "BMW Grubu", "sedan", "D", 2),
+    "bmw-3-e46":        C("BMW", "3 Serisi", "4. nesil", "E46", 1998, 2006, 2001, "Almanya", "BMW Grubu", "sedan", "D", 2),
+    "bmw-5-e60":        C("BMW", "5 Serisi", "5. nesil", "E60", 2003, 2010, 2007, "Almanya", "BMW Grubu", "sedan", "E", 2),
+    "bmw-5-f10":        C("BMW", "5 Serisi", "6. nesil", "F10", 2010, 2017, 2013, "Almanya", "BMW Grubu", "sedan", "E", 2),
+    "bmw-1-f20":        C("BMW", "1 Serisi", "2. nesil", "F20", 2011, 2019, 2015, "Almanya", "BMW Grubu", "hatchback", "C", 2),
+    "mercedes-c-w204":  C("Mercedes-Benz", "C-Serisi", "3. nesil", "W204", 2007, 2014, 2011, "Almanya", "Mercedes-Benz Grubu", "sedan", "D", 2),
+    "mercedes-e-w211":  C("Mercedes-Benz", "E-Serisi", "3. nesil", "W211", 2002, 2009, 2006, "Almanya", "Mercedes-Benz Grubu", "sedan", "E", 2),
+    "mercedes-c-w203":  C("Mercedes-Benz", "C-Serisi", "2. nesil", "W203", 2000, 2007, 2004, "Almanya", "Mercedes-Benz Grubu", "sedan", "D", 2),
+    "mercedes-e-w212":  C("Mercedes-Benz", "E-Serisi", "4. nesil", "W212", 2009, 2016, 2013, "Almanya", "Mercedes-Benz Grubu", "sedan", "E", 2),
+    "mercedes-a-w176":  C("Mercedes-Benz", "A-Serisi", "3. nesil", "W176", 2012, 2018, 2015, "Almanya", "Mercedes-Benz Grubu", "hatchback", "C", 2),
+    "audi-a3-8p":       C("Audi", "A3", "2. nesil", "8P", 2003, 2013, 2008, "Almanya", "Volkswagen Grubu", "hatchback", "C", 2),
+    "audi-a4-b8":       C("Audi", "A4", "4. nesil", "B8 (8K)", 2007, 2015, 2011, "Almanya", "Volkswagen Grubu", "sedan", "D", 2),
+    "audi-a6-c7":       C("Audi", "A6", "4. nesil", "C7 (4G)", 2011, 2018, 2014, "Almanya", "Volkswagen Grubu", "sedan", "E", 2),
+    "audi-q5-8r":       C("Audi", "Q5", "1. nesil", "8R", 2008, 2017, 2012, "Almanya", "Volkswagen Grubu", "SUV", "D-SUV", 2),
+    "peugeot-206":      C("Peugeot", "206", "1. nesil", "T1", 1998, 2012, 2003, "Fransa", "Stellantis", "hatchback", "B", 1),
+    "peugeot-207":      C("Peugeot", "207", "1. nesil", "A7", 2006, 2014, 2009, "Fransa", "Stellantis", "hatchback", "B", 2),
+    "peugeot-308-2":    C("Peugeot", "308", "2. nesil", "T9", 2013, 2021, 2017, "Fransa", "Stellantis", "hatchback", "C", 2),
+    "peugeot-301":      C("Peugeot", "301", "1. nesil", "M43", 2012, 2023, 2016, "Fransa", "Stellantis", "sedan", "B", 2),
+    "skoda-octavia-2":  C("Škoda", "Octavia", "2. nesil", "1Z", 2004, 2013, 2008, "Çekya", "Volkswagen Grubu", "sedan", "C", 2),
+    "skoda-superb-2":   C("Škoda", "Superb", "2. nesil", "3T", 2008, 2015, 2013, "Çekya", "Volkswagen Grubu", "sedan", "D", 2),
+    "skoda-fabia-3":    C("Škoda", "Fabia", "3. nesil", "NJ", 2014, 2021, 2018, "Çekya", "Volkswagen Grubu", "hatchback", "B", 2),
+    "seat-leon-3":      C("SEAT", "Leon", "3. nesil", "5F", 2012, 2020, 2017, "İspanya", "Volkswagen Grubu", "hatchback", "C", 2),
+    "seat-ibiza-4":     C("SEAT", "Ibiza", "4. nesil", "6J", 2008, 2017, 2012, "İspanya", "Volkswagen Grubu", "hatchback", "B", 2),
+    "dacia-logan-2":    C("Dacia", "Logan", "2. nesil", "L52", 2012, 2020, 2016, "Romanya", "Renault Grubu", "sedan", "B", 2),
+    "dacia-sandero-2":  C("Dacia", "Sandero", "2. nesil", "B52", 2012, 2020, 2016, "Romanya", "Renault Grubu", "hatchback", "B", 2),
+    "dacia-duster-1":   C("Dacia", "Duster", "1. nesil", "HS", 2010, 2017, 2013, "Romanya", "Renault Grubu", "SUV", "B-SUV", 2),
+    "nissan-qashqai-1": C("Nissan", "Qashqai", "1. nesil", "J10", 2006, 2013, 2010, "Japonya", "Nissan", "SUV", "C-SUV", 2),
+    "nissan-juke-f15":  C("Nissan", "Juke", "1. nesil", "F15", 2010, 2019, 2014, "Japonya", "Nissan", "SUV", "B-SUV", 1),
+    "kia-rio-3":        C("Kia", "Rio", "3. nesil", "UB", 2011, 2017, 2015, "Güney Kore", "Hyundai Grubu", "hatchback", "B", 2),
+    "kia-sportage-3":   C("Kia", "Sportage", "3. nesil", "SL", 2010, 2015, 2014, "Güney Kore", "Hyundai Grubu", "SUV", "C-SUV", 2),
+    "kia-ceed-jd":      C("Kia", "Cee'd", "2. nesil", "JD", 2012, 2018, 2015, "Güney Kore", "Hyundai Grubu", "hatchback", "C", 2),
+    "hyundai-accent-rb":C("Hyundai", "Accent", "4. nesil", "RB (Blue)", 2010, 2017, 2014, "Güney Kore", "Hyundai Grubu", "sedan", "B", 2),
+    "hyundai-i30-gd":   C("Hyundai", "i30", "2. nesil", "GD", 2011, 2017, 2015, "Güney Kore", "Hyundai Grubu", "hatchback", "C", 2),
+    "hyundai-elantra-md": C("Hyundai", "Elantra", "5. nesil", "MD", 2010, 2016, 2013, "Güney Kore", "Hyundai Grubu", "sedan", "C", 2),
+    "hyundai-tucson-tl":C("Hyundai", "Tucson", "3. nesil", "TL", 2015, 2020, 2018, "Güney Kore", "Hyundai Grubu", "SUV", "C-SUV", 2),
+    "honda-civic-fd":   C("Honda", "Civic", "8. nesil", "FD", 2005, 2011, 2009, "Japonya", "Honda", "sedan", "C", 2),
+    "honda-civic-fc":   C("Honda", "Civic", "10. nesil", "FC", 2015, 2021, 2019, "Japonya", "Honda", "sedan", "C", 2),
+    "chevrolet-cruze-1":C("Chevrolet", "Cruze", "1. nesil", "J300", 2008, 2016, 2012, "ABD", "General Motors", "sedan", "C", 2),
+    "mazda-3-bm":       C("Mazda", "3", "3. nesil", "BM", 2013, 2018, 2016, "Japonya", "Mazda", "hatchback", "C", 2),
+}
+
+
+credits = json.load(open(os.path.join(ROOT, "credits.json"), encoding="utf-8"))
+shots, cred = {}, {}
+def clean(a):
+    a = re.sub(r"\s+", " ", a or "").strip()
+    a = re.sub(r"\(talk\).*$", "", a).replace("&amp;", "&").strip()
+    return a[:60] or "Bilinmiyor"
+for c in credits:
+    shots.setdefault(c["car"], {}).setdefault(c["part"], []).append(c["img"].replace("img/", "").replace(".webp", ""))
+    cred[c["img"].replace("img/", "").replace(".webp", "")] = [clean(c.get("author")), c["license"], c["source"].replace("https://commons.wikimedia.org/wiki/", "")]
+PART = {"tail": "a", "head": "f", "interior": "k"}
+cars = []
+for cid, d in CARS.items():
+    s = shots.get(cid, {})
+    if not any(s.values()): raise SystemExit("no shots for " + cid)
+    cars.append(dict(id=cid, b=d["brand"], m=d["model"], g=d["gen"], c=d["code"], y0=d["y0"], y1=d["y1"], body=d["body"], seg=d["seg"],
+                     a=s.get("tail", []), f=s.get("head", []), k=s.get("interior", [])))
+missing = set(shots) - set(CARS)
+if missing: raise SystemExit("cars without catalogue entry: %s" % missing)
+js = "/* Otomatik üretildi: tools/build_data.py */\nwindow.AB_CARS=" + json.dumps(cars, ensure_ascii=False, separators=(",", ":")) + \
+     ";\nwindow.AB_CREDITS=" + json.dumps(cred, ensure_ascii=False, separators=(",", ":")) + ";\n"
+open(os.path.join(ROOT, "data.js"), "w", encoding="utf-8").write(js)
+print(len(cars), "araç |", "arka stop:", sum(1 for c in cars if c["a"]), "ön far:", sum(1 for c in cars if c["f"]), "kokpit:", sum(1 for c in cars if c["k"]), "| kare:", len(cred))
