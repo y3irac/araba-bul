@@ -1,5 +1,5 @@
 /* Araba Bul service worker: kabuk önbelleğe alınır, fotoğraflar ilk görüldüğünde saklanır. */
-const V = "arababul-v3.3";
+const V = "arababul-v3.4";
 const SHELL = ["./", "index.html", "styles.css", "config.js", "app.js", "data.js", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
