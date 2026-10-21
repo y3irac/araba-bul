@@ -104,11 +104,11 @@
   function options(car, lv, R) {
     const pro = lv === 'p';
     const cand = CARS.filter(c => c.id !== car.id).map(c => {
-      let s = R() * (pro ? 2.5 : 3);
+      let s = R() * (pro ? 3 : 5);
       if (pro) { if (label(c) === label(car)) s += 6; if (c.b === car.b) s += 3; }
       else if (c.b === car.b) s += 1;
-      if (c.seg === car.seg) s += 2;
-      if (c.body === car.body) s += 1.5;
+      if (c.seg === car.seg) s += 1.5;
+      if (c.body === car.body) s += 1;
       return [s, c];
     }).sort((x, y) => y[0] - x[0]);
     const out = [car.id]; const seen = new Set([pro ? car.id : label(car)]);
@@ -120,25 +120,32 @@
     }
     return pickN(out, out.length, R);
   }
-  function buildRound(cats, lv, seed) {
-    const R = rng(seed); const used = new Set(); const qs = [];
+  // Araç seçimi ve şıklar ayrı rastgele akışlardan gelir; böylece tohum taraması yalnız araç seçimini hesaplar.
+  function pickCars(cats, seed) {
+    const R = rng(seed); const used = new Set(); const out = [];
     for (let i = 0; i < QN; i++) {
       const cat = cats[i % cats.length];
       const pool = CARS.filter(c => c[cat].length && !used.has(c.id));
       const car = pool[Math.floor(R() * pool.length)];
       used.add(car.id);
-      const img = car[cat][Math.floor(R() * car[cat].length)];
-      qs.push({ cat, id: car.id, img, opts: options(car, lv, R), zoom: lv === 'p' ? { x: Math.round(30 + R() * 40), y: Math.round(30 + R() * 40) } : null });
+      out.push({ cat, id: car.id, img: car[cat][Math.floor(R() * car[cat].length)] });
     }
-    return qs;
+    return out;
   }
-  // Yeni turda daha önce görülmeyen araçlar gelsin diye birkaç tohum dener; seçilen tohum linkle paylaşılabilir.
-  function freshSeed(cat, lv) {
-    const seen = new Set(S.seen[cat] || []); let best = null, bestN = 99;
-    for (let t = 0; t < 40; t++) {
-      const seed = (Math.random() * 2 ** 32) >>> 0;
-      const n = buildRound([cat], lv, seed).filter(q => seen.has(q.id)).length;
-      if (n < bestN) { best = seed; bestN = n; if (!n) break; }
+  function buildRound(cats, lv, seed) {
+    const R = rng((seed ^ 0x9E3779B9) >>> 0);
+    return pickCars(cats, seed).map(p => ({ ...p, opts: options(BY[p.id], lv, R), zoom: lv === 'p' ? { x: Math.round(30 + R() * 40), y: Math.round(30 + R() * 40) } : null }));
+  }
+  // Yeni tur: yakın zamanda gördüğün araçları getirmeyen bir tohum arar. Havuz bitene kadar aynı araç tekrar gelmez.
+  function freshSeed(cat) {
+    const hist = (S.hist && S.hist[cat]) || {}; const now = S.rounds || 0;
+    const pool = CARS.filter(c => c[cat].length).length;
+    const win = Math.max(1, Math.floor(pool / QN) - 1);
+    let best = 0, bestP = Infinity;
+    for (let t = 0; t < 400; t++) {
+      const seed = (Math.random() * 2 ** 32) >>> 0; let p = 0;
+      for (const q of pickCars([cat], seed)) { const at = hist[q.id]; if (at != null && now - at < win) p += win - (now - at); }
+      if (p < bestP) { best = seed; bestP = p; if (!p) break; }
     }
     return best;
   }
@@ -351,7 +358,7 @@
       S.day.streak = Math.max(S.day.streak, G.streak);
       if (!S.garage[q.id]) { S.garage[q.id] = today(); S.week.cars++; }
     } else G.streak = 0;
-    const seen = S.seen[q.cat] = (S.seen[q.cat] || []).filter(x => x !== q.id); seen.push(q.id); if (seen.length > 60) seen.shift();
+    S.hist = S.hist || {}; (S.hist[q.cat] = S.hist[q.cat] || {})[q.id] = S.rounds || 0;
     save();
     G.answers.push({ id: q.id, img: q.img, cat: q.cat, ok, pick, pts });
     // görsel geri bildirim
@@ -518,14 +525,14 @@
     const a = t.dataset.act;
     if (a === 'go') go(t.dataset.r);
     else if (a === 'lv') { S.lv = t.dataset.lv; save(); render(); }
-    else if (a === 'start') { const cat = t.dataset.cat; startRound({ cats: [cat], lv: S.lv, seed: freshSeed(cat, S.lv), mode: 'cat' }); }
+    else if (a === 'start') { const cat = t.dataset.cat; startRound({ cats: [cat], lv: S.lv, seed: freshSeed(cat), mode: 'cat' }); }
     else if (a === 'daily') startRound({ cats: ['a', 'f', 'k'], lv: 'e', seed: hash('gunun-turu-' + today()), mode: 'daily' });
     else if (a === 'chal' && CHAL) startRound({ cats: [CHAL.cat], lv: CHAL.lv, seed: CHAL.seed, mode: 'chal', target: CHAL.score });
     else if (a === 'ans') answer(t.dataset.id);
     else if (a === 'next') next();
     else if (a === 'fifty') fifty();
     else if (a === 'quit') { if (G) { cancelAnimationFrame(G.timer); clearTimeout(G.auto); } G = null; go('home'); }
-    else if (a === 'again') { const r = LAST; if (r && r.mode !== 'daily') { const cat = r.cats[0]; startRound({ cats: [cat], lv: r.lv, seed: freshSeed(cat, r.lv), mode: 'cat' }); } else go('home'); }
+    else if (a === 'again') { const r = LAST; if (r && r.mode !== 'daily') { const cat = r.cats[0]; startRound({ cats: [cat], lv: r.lv, seed: freshSeed(cat), mode: 'cat' }); } else go('home'); }
     else if (a === 'share') share(shareText(LAST));
     else if (a === 'sharedaily') { const d = S.daily[today()]; if (d) { const txt = `Araba Bul · Günün Turu · ${trDate()}\n${d.correct}/10 · ${d.score.toLocaleString('tr-TR')} puan\n${d.marks.map(m => m ? '🟩' : '🟥').join('')}`; try { navigator.clipboard.writeText(txt).then(() => { t.textContent = 'Kopyalandı'; }, () => { t.textContent = 'Kopyalanamadı'; }); } catch (err) { t.textContent = 'Kopyalanamadı'; } } }
     else if (a === 'gf') { gFilter = t.dataset.b; render(); }
