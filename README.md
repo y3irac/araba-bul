@@ -64,7 +64,7 @@ Soru sırasında ekranda reklam yok. AdSense başvurusu için sitenin kendi alan
 | `config.js` | Site adresi ve reklam ayarları |
 | `styles.css` | Açık tema ve tüm ekranlar |
 | `app.js` | Oyun motoru: kategoriler, seviyeler, Günün Turu, meydan okuma, görevler, garaj |
-| `data.js` | 317 araçlık katalog ve fotoğraf hakları (`tools/build_data.py` üretir) |
+| `data.js` | 319 araçlık katalog ve fotoğraf hakları (`tools/build_data.py` üretir) |
 | `img/` | 896 kare, 800×600 WebP: `-tail` stop, `-head` far, `-interior` kokpit. Amblem, model yazısı ve plakalar kapatıldı |
 | `credits.json` | Her fotoğrafın yazarı, lisansı ve Wikimedia Commons sayfası |
 | `sw.js`, `manifest.webmanifest`, `icons/` | PWA: çevrimdışı çalışma ve ana ekran ikonu |
