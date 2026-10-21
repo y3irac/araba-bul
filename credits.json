@@ -11238,5 +11238,1485 @@
 "license": "Public domain",
 "licenseUrl": "",
 "source": "https://commons.wikimedia.org/wiki/File:Volvo_XC60_T5_SE_interior.jpg"
+},
+{
+"img": "img/alfa-156-tail.webp",
+"car": "alfa-156",
+"part": "tail",
+"file": "Alfa Romeo 156 rear 20080303.jpg",
+"author": "Rudolf Stricker",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_rear_20080303.jpg"
+},
+{
+"img": "img/alfa-156-head.webp",
+"car": "alfa-156",
+"part": "head",
+"file": "Alfa Romeo 156 front 20080303.jpg",
+"author": "Rudolf Stricker",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_front_20080303.jpg"
+},
+{
+"img": "img/alfa-156-interior.webp",
+"car": "alfa-156",
+"part": "interior",
+"file": "Alfa Romeo 156 2nd series interior 2.jpg",
+"author": "Marvinr",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_2nd_series_interior_2.jpg"
+},
+{
+"img": "img/alfa-159-tail.webp",
+"car": "alfa-159",
+"part": "tail",
+"file": "Alfa Romeo 159 ti rear.JPG",
+"author": "M 93",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_ti_rear.JPG"
+},
+{
+"img": "img/alfa-159-head.webp",
+"car": "alfa-159",
+"part": "head",
+"file": "2009 Alfa Romeo 159 Sportwagon Lusso JTDM Estate 2.4 Front.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2009_Alfa_Romeo_159_Sportwagon_Lusso_JTDM_Estate_2.4_Front.jpg"
+},
+{
+"img": "img/alfa-giulietta-tail.webp",
+"car": "alfa-giulietta",
+"part": "tail",
+"file": "\" 10 - ITALY - ALFA ROMEO Giulietta white hatchback.jpg",
+"author": "Amir",
+"license": "CC BY-SA 3.0 it",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/it/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:%22_10_-_ITALY_-_ALFA_ROMEO_Giulietta_white_hatchback.jpg"
+},
+{
+"img": "img/alfa-giulietta-head.webp",
+"car": "alfa-giulietta",
+"part": "head",
+"file": "Alfa Romeo Giulietta front 20100718.jpg",
+"author": "M 93",
+"license": "Attribution",
+"licenseUrl": "",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_front_20100718.jpg"
+},
+{
+"img": "img/alfa-giulietta-interior.webp",
+"car": "alfa-giulietta",
+"part": "interior",
+"file": "Alfa Romeo Giulietta dashboard (type 940).jpg",
+"author": "Petar Milošević",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_dashboard_(type_940).jpg"
+},
+{
+"img": "img/alfa-mito-tail.webp",
+"car": "alfa-mito",
+"part": "tail",
+"file": "\"14 - ITALY - Alfa Romeo MiTo QV in Milan -red coupé in Milan - Quadrifoglio Verde sports car (rear view).jpg",
+"author": "Pava (Milano)",
+"license": "CC BY-SA 3.0 it",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/it/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:%2214_-_ITALY_-_Alfa_Romeo_MiTo_QV_in_Milan_-red_coup%C3%A9_in_Milan_-_Quadrifoglio_Verde_sports_car_(rear_view).jpg"
+},
+{
+"img": "img/alfa-mito-head.webp",
+"car": "alfa-mito",
+"part": "head",
+"file": "Alfa Romeo MiTo 1.4 TB front.JPG",
+"author": "M 93",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_MiTo_1.4_TB_front.JPG"
+},
+{
+"img": "img/alfa-mito-interior.webp",
+"car": "alfa-mito",
+"part": "interior",
+"file": "Alfa Romeo MiTo Interior 06.jpg",
+"author": "ContextCreator",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_MiTo_Interior_06.jpg"
+},
+{
+"img": "img/alfa-stelvio-tail.webp",
+"car": "alfa-stelvio",
+"part": "tail",
+"file": "Alfa Romeo STELVIO FIRST EDITION (ABA-94920) rear.jpg",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_STELVIO_FIRST_EDITION_(ABA-94920)_rear.jpg"
+},
+{
+"img": "img/alfa-stelvio-head.webp",
+"car": "alfa-stelvio",
+"part": "head",
+"file": "Alfa Romeo STELVIO FIRST EDITION (ABA-94920) front.jpg",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_STELVIO_FIRST_EDITION_(ABA-94920)_front.jpg"
+},
+{
+"img": "img/alfa-stelvio-interior.webp",
+"car": "alfa-stelvio",
+"part": "interior",
+"file": "Alfa Romeo Stelvio - wnętrze (MSP17) (cropped).jpg",
+"author": "Jakub \"flyz1\" Maciejewski",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Stelvio_-_wn%C4%99trze_(MSP17)_(cropped).jpg"
+},
+{
+"img": "img/alfa-tonale-tail.webp",
+"car": "alfa-tonale",
+"part": "tail",
+"file": "2024 Alfa Romeo Tonale Ti, rear left, 08-21-2026.jpg",
+"author": "BuickRiviera99",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_Alfa_Romeo_Tonale_Ti,_rear_left,_08-21-2026.jpg"
+},
+{
+"img": "img/alfa-tonale-head.webp",
+"car": "alfa-tonale",
+"part": "head",
+"file": "2024 Alfa Romeo Tonale Ti, front left, 08-21-2026.jpg",
+"author": "BuickRiviera99",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_Alfa_Romeo_Tonale_Ti,_front_left,_08-21-2026.jpg"
+},
+{
+"img": "img/alfa-tonale-interior.webp",
+"car": "alfa-tonale",
+"part": "interior",
+"file": "Alfa Romeo Tonale PLUG-IN HYBRID Q4 VELOCE (3LA-AV113 0001) interior.jpg",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Tonale_PLUG-IN_HYBRID_Q4_VELOCE_(3LA-AV113_0001)_interior.jpg"
+},
+{
+"img": "img/aston-db11-tail.webp",
+"car": "aston-db11",
+"part": "tail",
+"file": "DB11 Rear.jpg",
+"author": "MrWalkr",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:DB11_Rear.jpg"
+},
+{
+"img": "img/aston-db11-head.webp",
+"car": "aston-db11",
+"part": "head",
+"file": "2017 Aston Martin DB11 4.0 (US Spec).jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2017_Aston_Martin_DB11_4.0_(US_Spec).jpg"
+},
+{
+"img": "img/aston-db11-interior.webp",
+"car": "aston-db11",
+"part": "interior",
+"file": "Aston Martin DB11 Interior (Center Console).jpg",
+"author": "RpM Tartar",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Aston_Martin_DB11_Interior_(Center_Console).jpg"
+},
+{
+"img": "img/aston-vantage-2018-tail.webp",
+"car": "aston-vantage-2018",
+"part": "tail",
+"file": "2019 Aston Martin Vantage coupe, rear right (Wings-n-Wheels 2023).jpg",
+"author": "MercurySable99",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2019_Aston_Martin_Vantage_coupe,_rear_right_(Wings-n-Wheels_2023).jpg"
+},
+{
+"img": "img/aston-vantage-2018-head.webp",
+"car": "aston-vantage-2018",
+"part": "head",
+"file": "2019 Aston Martin Vantage V8 Automatic 4.0 Front.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2019_Aston_Martin_Vantage_V8_Automatic_4.0_Front.jpg"
+},
+{
+"img": "img/aston-vantage-2018-interior.webp",
+"car": "aston-vantage-2018",
+"part": "interior",
+"file": "File-2018 Aston Martin Vantage prototype (Hong Kong) interior.jpg",
+"author": "Malchick743 (ALJMW/MGJMW)",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:File-2018_Aston_Martin_Vantage_prototype_(Hong_Kong)_interior.jpg"
+},
+{
+"img": "img/bentley-bentayga-tail.webp",
+"car": "bentley-bentayga",
+"part": "tail",
+"file": "Bentley Bentayga Diesel – Heckansicht, 24. Juni 2017, Düsseldorf.jpg",
+"author": "© M 93",
+"license": "CC BY-SA 3.0 de",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Bentley_Bentayga_Diesel_%E2%80%93_Heckansicht,_24._Juni_2017,_D%C3%BCsseldorf.jpg"
+},
+{
+"img": "img/bentley-bentayga-head.webp",
+"car": "bentley-bentayga",
+"part": "head",
+"file": "Bentley Bentayga 2015 - front.jpg",
+"author": "DeFacto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Bentley_Bentayga_2015_-_front.jpg"
+},
+{
+"img": "img/bentley-bentayga-interior.webp",
+"car": "bentley-bentayga",
+"part": "interior",
+"file": "Bentley Bentayga - Interior.jpg",
+"author": "Y.Leclercq",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Bentley_Bentayga_-_Interior.jpg"
+},
+{
+"img": "img/bentley-continental-3-tail.webp",
+"car": "bentley-continental-3",
+"part": "tail",
+"file": "Bentley Continental GT (II) – Heckansicht (2), 30. August 2011, Düsseldorf.jpg",
+"author": "M 93",
+"license": "CC BY-SA 3.0 de",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Bentley_Continental_GT_(II)_%E2%80%93_Heckansicht_(2),_30._August_2011,_D%C3%BCsseldorf.jpg"
+},
+{
+"img": "img/bentley-continental-3-head.webp",
+"car": "bentley-continental-3",
+"part": "head",
+"file": "Bentley Continental GT (II) – Frontansicht (2), 5. April 2012, Düsseldorf.jpg",
+"author": "M 93",
+"license": "CC BY-SA 3.0 de",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Bentley_Continental_GT_(II)_%E2%80%93_Frontansicht_(2),_5._April_2012,_D%C3%BCsseldorf.jpg"
+},
+{
+"img": "img/bentley-continental-3-interior.webp",
+"car": "bentley-continental-3",
+"part": "interior",
+"file": "Bentley Continental GTC (II) – Innenraum (1), 25. Oktober 2011, Düsseldorf.jpg",
+"author": "M 93",
+"license": "CC BY-SA 3.0 de",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Bentley_Continental_GTC_(II)_%E2%80%93_Innenraum_(1),_25._Oktober_2011,_D%C3%BCsseldorf.jpg"
+},
+{
+"img": "img/bugatti-chiron-head.webp",
+"car": "bugatti-chiron",
+"part": "head",
+"file": "2021 Bugatti Chiron Super Sport 8.0 Front.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2021_Bugatti_Chiron_Super_Sport_8.0_Front.jpg"
+},
+{
+"img": "img/byd-atto3-tail.webp",
+"car": "byd-atto3",
+"part": "tail",
+"file": "2022 BYD Atto 3 Extended Range 480km (Rear).png",
+"author": "Chanokchon",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2022_BYD_Atto_3_Extended_Range_480km_(Rear).png"
+},
+{
+"img": "img/byd-atto3-head.webp",
+"car": "byd-atto3",
+"part": "head",
+"file": "BYD Atto 3 front-left (cropped).jpg",
+"author": "Hubert Berberich (HubiB)",
+"license": "CC BY 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:BYD_Atto_3_front-left_(cropped).jpg"
+},
+{
+"img": "img/byd-atto3-interior.webp",
+"car": "byd-atto3",
+"part": "interior",
+"file": "BYD Atto 3 Premium interior.jpg",
+"author": "Ethan Llamas",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:BYD_Atto_3_Premium_interior.jpg"
+},
+{
+"img": "img/byd-dolphin-tail.webp",
+"car": "byd-dolphin",
+"part": "tail",
+"file": "2021 BYD Dolphin EV (rear).jpg",
+"author": "User3204",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2021_BYD_Dolphin_EV_(rear).jpg"
+},
+{
+"img": "img/byd-dolphin-head.webp",
+"car": "byd-dolphin",
+"part": "head",
+"file": "2024 BYD Dolphin EV in Cream White, front left, 06-22-2024.jpg",
+"author": "Ethan Llamas",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_BYD_Dolphin_EV_in_Cream_White,_front_left,_06-22-2024.jpg"
+},
+{
+"img": "img/byd-dolphin-interior.webp",
+"car": "byd-dolphin",
+"part": "interior",
+"file": "2024 BYD Dolphin EV dashboard, 06-22-2024.jpg",
+"author": "Ethan Llamas",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_BYD_Dolphin_EV_dashboard,_06-22-2024.jpg"
+},
+{
+"img": "img/byd-han-tail.webp",
+"car": "byd-han",
+"part": "tail",
+"file": "2024 BYD Han EV, rear left, 07-19-2024.jpg",
+"author": "Ethan Llamas",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_BYD_Han_EV,_rear_left,_07-19-2024.jpg"
+},
+{
+"img": "img/byd-han-head.webp",
+"car": "byd-han",
+"part": "head",
+"file": "2023 BYD Han DM-i (facelift), front 8.17.23.jpg",
+"author": "Kevauto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2023_BYD_Han_DM-i_(facelift),_front_8.17.23.jpg"
+},
+{
+"img": "img/byd-han-interior.webp",
+"car": "byd-han",
+"part": "interior",
+"file": "2024 BYD Han EV interior.jpg",
+"author": "Ethan Llamas",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_BYD_Han_EV_interior.jpg"
+},
+{
+"img": "img/chery-omoda5-tail.webp",
+"car": "chery-omoda5",
+"part": "tail",
+"file": "2024 Omoda C5 white rear.jpg",
+"author": "gleb",
+"license": "CC BY 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_Omoda_C5_white_rear.jpg"
+},
+{
+"img": "img/chery-omoda5-head.webp",
+"car": "chery-omoda5",
+"part": "head",
+"file": "2024 Omoda C5 white front.jpg",
+"author": "gleb",
+"license": "CC BY 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_Omoda_C5_white_front.jpg"
+},
+{
+"img": "img/chery-omoda5-interior.webp",
+"car": "chery-omoda5",
+"part": "interior",
+"file": "2026 Omoda C5 EV (Thailand) interior.jpg",
+"author": "Andra Febrian",
+"license": "CC BY 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2026_Omoda_C5_EV_(Thailand)_interior.jpg"
+},
+{
+"img": "img/chery-tiggo7-tail.webp",
+"car": "chery-tiggo7",
+"part": "tail",
+"file": "Chery Tiggo 7 Back IMG 0391.jpg",
+"author": "Alexander Migl",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Chery_Tiggo_7_Back_IMG_0391.jpg"
+},
+{
+"img": "img/chery-tiggo7-head.webp",
+"car": "chery-tiggo7",
+"part": "head",
+"file": "2024 Chery Tiggo7 Pro 290T front.jpg",
+"author": "LuvsMG481",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_Chery_Tiggo7_Pro_290T_front.jpg"
+},
+{
+"img": "img/chery-tiggo7-interior.webp",
+"car": "chery-tiggo7",
+"part": "interior",
+"file": "Chery Tiggo 7 Plus interior at the launch event.jpg",
+"author": "GZrex",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Chery_Tiggo_7_Plus_interior_at_the_launch_event.jpg"
+},
+{
+"img": "img/chevrolet-aveo-t250-tail.webp",
+"car": "chevrolet-aveo-t250",
+"part": "tail",
+"file": "Chevrolet Aveo Dreitürer Polysilver Heck.JPG",
+"author": "Thomas doerfer",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+"source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Aveo_Dreit%C3%BCrer_Polysilver_Heck.JPG"
+},
+{
+"img": "img/chevrolet-aveo-t250-head.webp",
+"car": "chevrolet-aveo-t250",
+"part": "head",
+"file": "2009 Chevrolet Aveo5 1LT, front right, 03-08-2024.jpg",
+"author": "MercurySable99",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2009_Chevrolet_Aveo5_1LT,_front_right,_03-08-2024.jpg"
+},
+{
+"img": "img/chevrolet-aveo-t300-tail.webp",
+"car": "chevrolet-aveo-t300",
+"part": "tail",
+"file": "2013 Chevrolet Aveo LT 1.2 Rear.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2013_Chevrolet_Aveo_LT_1.2_Rear.jpg"
+},
+{
+"img": "img/chevrolet-aveo-t300-head.webp",
+"car": "chevrolet-aveo-t300",
+"part": "head",
+"file": "2013 Chevrolet Aveo LT 1.2 Front.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2013_Chevrolet_Aveo_LT_1.2_Front.jpg"
+},
+{
+"img": "img/chevrolet-camaro-6-tail.webp",
+"car": "chevrolet-camaro-6",
+"part": "tail",
+"file": "2020 Chevrolet Camaro LT1 1SS, rear 3.2.20.jpg",
+"author": "Kevauto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2020_Chevrolet_Camaro_LT1_1SS,_rear_3.2.20.jpg"
+},
+{
+"img": "img/chevrolet-camaro-6-head.webp",
+"car": "chevrolet-camaro-6",
+"part": "head",
+"file": "2020 Chevrolet Camaro LT1 1SS, front 3.2.20.jpg",
+"author": "Kevauto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2020_Chevrolet_Camaro_LT1_1SS,_front_3.2.20.jpg"
+},
+{
+"img": "img/chevrolet-camaro-6-interior.webp",
+"car": "chevrolet-camaro-6",
+"part": "interior",
+"file": "2022 Chevrolet Camaro interior.jpg",
+"author": "deathpallie325",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2022_Chevrolet_Camaro_interior.jpg"
+},
+{
+"img": "img/chevrolet-captiva-tail.webp",
+"car": "chevrolet-captiva",
+"part": "tail",
+"file": "Chevrolet Captiva LS rear 20100601.jpg",
+"author": "M 93",
+"license": "Attribution",
+"licenseUrl": "",
+"source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Captiva_LS_rear_20100601.jpg"
+},
+{
+"img": "img/chevrolet-captiva-head.webp",
+"car": "chevrolet-captiva",
+"part": "head",
+"file": "Chevrolet Captiva front.JPG",
+"author": "M 93",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Captiva_front.JPG"
+},
+{
+"img": "img/chevrolet-captiva-interior.webp",
+"car": "chevrolet-captiva",
+"part": "interior",
+"file": "Chevrolet Captiva interior.jpg",
+"author": "Love Krittaya",
+"license": "Public domain",
+"licenseUrl": "",
+"source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Captiva_interior.jpg"
+},
+{
+"img": "img/chevrolet-corvette-c8-tail.webp",
+"car": "chevrolet-corvette-c8",
+"part": "tail",
+"file": "2023 Chevrolet Corvette Stingray, rear left, 05-26-2024.jpg",
+"author": "MercurySable99",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Corvette_Stingray,_rear_left,_05-26-2024.jpg"
+},
+{
+"img": "img/chevrolet-corvette-c8-head.webp",
+"car": "chevrolet-corvette-c8",
+"part": "head",
+"file": "2023 Chevrolet Corvette Stingray coupe, front left, 06-06-2026.jpg",
+"author": "MercurySable99",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Corvette_Stingray_coupe,_front_left,_06-06-2026.jpg"
+},
+{
+"img": "img/chevrolet-corvette-c8-interior.webp",
+"car": "chevrolet-corvette-c8",
+"part": "interior",
+"file": "Corvette C8 interior.jpg",
+"author": "MN",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Corvette_C8_interior.jpg"
+},
+{
+"img": "img/chevrolet-lacetti-tail.webp",
+"car": "chevrolet-lacetti",
+"part": "tail",
+"file": "Chevrolet Lacetti rear 20080121.jpg",
+"author": "Rudolf Stricker",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+"source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Lacetti_rear_20080121.jpg"
+},
+{
+"img": "img/chevrolet-lacetti-head.webp",
+"car": "chevrolet-lacetti",
+"part": "head",
+"file": "Chevrolet Lacetti front 20080121.jpg",
+"author": "Rudolf Stricker",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+"source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Lacetti_front_20080121.jpg"
+},
+{
+"img": "img/daewoo-lanos-head.webp",
+"car": "daewoo-lanos",
+"part": "head",
+"file": "Daewoo Lanos front 20070323.jpg",
+"author": "Rudolf Stricker",
+"license": "Public domain",
+"licenseUrl": "",
+"source": "https://commons.wikimedia.org/wiki/File:Daewoo_Lanos_front_20070323.jpg"
+},
+{
+"img": "img/daewoo-matiz-head.webp",
+"car": "daewoo-matiz",
+"part": "head",
+"file": "Daewoo Matiz front 20080320.jpg",
+"author": "Rudolf Stricker",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+"source": "https://commons.wikimedia.org/wiki/File:Daewoo_Matiz_front_20080320.jpg"
+},
+{
+"img": "img/daewoo-matiz-interior.webp",
+"car": "daewoo-matiz",
+"part": "interior",
+"file": "Daewoo Matiz M150 wnętrze przód.jpg",
+"author": "Adam Woodrow",
+"license": "CC BY 2.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+"source": "https://commons.wikimedia.org/wiki/File:Daewoo_Matiz_M150_wn%C4%99trze_prz%C3%B3d.jpg"
+},
+{
+"img": "img/daewoo-nexia-tail.webp",
+"car": "daewoo-nexia",
+"part": "tail",
+"file": "2012 Daewoo Nexia smoke beige rear.jpg",
+"author": "gleb",
+"license": "CC BY 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2012_Daewoo_Nexia_smoke_beige_rear.jpg"
+},
+{
+"img": "img/daewoo-nexia-head.webp",
+"car": "daewoo-nexia",
+"part": "head",
+"file": "Daewoo Nexia front 20071228.jpg",
+"author": "Rudolf Stricker",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+"source": "https://commons.wikimedia.org/wiki/File:Daewoo_Nexia_front_20071228.jpg"
+},
+{
+"img": "img/dodge-challenger-3-tail.webp",
+"car": "dodge-challenger-3",
+"part": "tail",
+"file": "Dodge Challenger (Rear).jpg",
+"author": "Elveres",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Dodge_Challenger_(Rear).jpg"
+},
+{
+"img": "img/dodge-challenger-3-head.webp",
+"car": "dodge-challenger-3",
+"part": "head",
+"file": "Dodge Challenger RT (3rd generation) front.JPG",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Dodge_Challenger_RT_(3rd_generation)_front.JPG"
+},
+{
+"img": "img/dodge-challenger-3-interior.webp",
+"car": "dodge-challenger-3",
+"part": "interior",
+"file": "2012 Dodge Challenger S E, Interior (6849325615).jpg",
+"author": "artistmac",
+"license": "CC BY-SA 2.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+"source": "https://commons.wikimedia.org/wiki/File:2012_Dodge_Challenger_S_E,_Interior_(6849325615).jpg"
+},
+{
+"img": "img/ferrari-296-tail.webp",
+"car": "ferrari-296",
+"part": "tail",
+"file": "Ferrari 296GTB light green rear 2025-08.jpg",
+"author": "Wikisympathisant",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_296GTB_light_green_rear_2025-08.jpg"
+},
+{
+"img": "img/ferrari-296-head.webp",
+"car": "ferrari-296",
+"part": "head",
+"file": "2022 Ferrari 296.jpg",
+"author": "Max Baillie",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2022_Ferrari_296.jpg"
+},
+{
+"img": "img/ferrari-458-tail.webp",
+"car": "ferrari-458",
+"part": "tail",
+"file": "Ferrari 458 registered January 2011 4497cc rear three quarters.JPG",
+"author": "Charles01",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_458_registered_January_2011_4497cc_rear_three_quarters.JPG"
+},
+{
+"img": "img/ferrari-458-head.webp",
+"car": "ferrari-458",
+"part": "head",
+"file": "Ferrari 458 Italia front.JPG",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_458_Italia_front.JPG"
+},
+{
+"img": "img/ferrari-488-tail.webp",
+"car": "ferrari-488",
+"part": "tail",
+"file": "Ferrari 488 GTB (ABA-F142B) rear.jpg",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_488_GTB_(ABA-F142B)_rear.jpg"
+},
+{
+"img": "img/ferrari-488-head.webp",
+"car": "ferrari-488",
+"part": "head",
+"file": "Ferrari 488 GTB (ABA-F142B) front.jpg",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_488_GTB_(ABA-F142B)_front.jpg"
+},
+{
+"img": "img/ferrari-f8-tail.webp",
+"car": "ferrari-f8",
+"part": "tail",
+"file": "Vue arrière Ferrari F8 tributo.jpg",
+"author": "Mathious Ier",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Vue_arri%C3%A8re_Ferrari_F8_tributo.jpg"
+},
+{
+"img": "img/ferrari-purosangue-head.webp",
+"car": "ferrari-purosangue",
+"part": "head",
+"file": "Ferrari 7BA-F175AHA Purosangue (No.52) (24052609241).jpg",
+"author": "先従隗始",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_7BA-F175AHA_Purosangue_(No.52)_(24052609241).jpg"
+},
+{
+"img": "img/ferrari-roma-tail.webp",
+"car": "ferrari-roma",
+"part": "tail",
+"file": "Ferrari Roma Rear view 002.jpg",
+"author": "Alexandre Prevot",
+"license": "CC BY-SA 2.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_Roma_Rear_view_002.jpg"
+},
+{
+"img": "img/ferrari-roma-head.webp",
+"car": "ferrari-roma",
+"part": "head",
+"file": "2022 Ferrari Roma.jpg",
+"author": "Calreyn88",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2022_Ferrari_Roma.jpg"
+},
+{
+"img": "img/ferrari-roma-interior.webp",
+"car": "ferrari-roma",
+"part": "interior",
+"file": "Ferrari Roma Dual Cockpit Design (bearb Sp).jpg",
+"author": "Epensock",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_Roma_Dual_Cockpit_Design_(bearb_Sp).jpg"
+},
+{
+"img": "img/ferrari-sf90-tail.webp",
+"car": "ferrari-sf90",
+"part": "tail",
+"file": "2025 Ferrari SF90XX Stradale, right rear view.jpg",
+"author": "Mr.choppers",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2025_Ferrari_SF90XX_Stradale,_right_rear_view.jpg"
+},
+{
+"img": "img/ferrari-sf90-head.webp",
+"car": "ferrari-sf90",
+"part": "head",
+"file": "Ferrari SF90 Stradale in Bridgehampton, front left.jpg",
+"author": "Mr.choppers",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Ferrari_SF90_Stradale_in_Bridgehampton,_front_left.jpg"
+},
+{
+"img": "img/isuzu-dmax-2-tail.webp",
+"car": "isuzu-dmax-2",
+"part": "tail",
+"file": "Isuzu D-MAX (rear quarter).JPG",
+"author": "Overlaet",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Isuzu_D-MAX_(rear_quarter).JPG"
+},
+{
+"img": "img/isuzu-dmax-2-head.webp",
+"car": "isuzu-dmax-2",
+"part": "head",
+"file": "2012 Isuzu D-Max (MY12) SX 4x4 4-door utility (2012-10-26) 01.jpg",
+"author": "OSX",
+"license": "Public domain",
+"licenseUrl": "",
+"source": "https://commons.wikimedia.org/wiki/File:2012_Isuzu_D-Max_(MY12)_SX_4x4_4-door_utility_(2012-10-26)_01.jpg"
+},
+{
+"img": "img/isuzu-dmax-2-interior.webp",
+"car": "isuzu-dmax-2",
+"part": "interior",
+"file": "2017 Isuzu D-Max Hi-Lander 1.9 Ddi Z-Prestige Double-Cab (Cockpit).jpg",
+"author": "Chanokchon",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2017_Isuzu_D-Max_Hi-Lander_1.9_Ddi_Z-Prestige_Double-Cab_(Cockpit).jpg"
+},
+{
+"img": "img/jeep-avenger-head.webp",
+"car": "jeep-avenger",
+"part": "head",
+"file": "2024 Jeep Avenger in Granite, front left, 06-10-2025.jpg",
+"author": "Cutlass",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:2024_Jeep_Avenger_in_Granite,_front_left,_06-10-2025.jpg"
+},
+{
+"img": "img/jeep-compass-2-tail.webp",
+"car": "jeep-compass-2",
+"part": "tail",
+"file": "Jeep-compass-2018-petrol-at-limited-india-back.jpg",
+"author": "Sim tcr",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Jeep-compass-2018-petrol-at-limited-india-back.jpg"
+},
+{
+"img": "img/jeep-compass-2-head.webp",
+"car": "jeep-compass-2",
+"part": "head",
+"file": "2026 Jeep Compass North in Silver Zynith Metallic, front left, 2026-08-08.jpg",
+"author": "Elise240SX",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2026_Jeep_Compass_North_in_Silver_Zynith_Metallic,_front_left,_2026-08-08.jpg"
+},
+{
+"img": "img/jeep-compass-2-interior.webp",
+"car": "jeep-compass-2",
+"part": "interior",
+"file": "2020 Jeep Compass interior.jpg",
+"author": "deathpallie325",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2020_Jeep_Compass_interior.jpg"
+},
+{
+"img": "img/jeep-grand-cherokee-wk2-tail.webp",
+"car": "jeep-grand-cherokee-wk2",
+"part": "tail",
+"file": "Jeep Grand Cherokee 3.0 CRD Overland (WK) – Heckansicht, 31. März 2012, Düsseldorf.jpg",
+"author": "M 93",
+"license": "CC BY-SA 3.0 de",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Jeep_Grand_Cherokee_3.0_CRD_Overland_(WK)_%E2%80%93_Heckansicht,_31._M%C3%A4rz_2012,_D%C3%BCsseldorf.jpg"
+},
+{
+"img": "img/jeep-grand-cherokee-wk2-head.webp",
+"car": "jeep-grand-cherokee-wk2",
+"part": "head",
+"file": "Jeep Grand Cherokee 3.0 CRD Overland (WK) – Frontansicht, 31. März 2012, Düsseldorf.jpg",
+"author": "M 93",
+"license": "CC BY-SA 3.0 de",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Jeep_Grand_Cherokee_3.0_CRD_Overland_(WK)_%E2%80%93_Frontansicht,_31._M%C3%A4rz_2012,_D%C3%BCsseldorf.jpg"
+},
+{
+"img": "img/jeep-grand-cherokee-wk2-interior.webp",
+"car": "jeep-grand-cherokee-wk2",
+"part": "interior",
+"file": "Jeep Grand Cherokee Summit MY2017 Laguna Interieur Front.jpg",
+"author": "O4L",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Jeep_Grand_Cherokee_Summit_MY2017_Laguna_Interieur_Front.jpg"
+},
+{
+"img": "img/jeep-renegade-tail.webp",
+"car": "jeep-renegade",
+"part": "tail",
+"file": "Jeep Renegade 1.6 MultiJet 2WD Longitude – Heckansicht, 9. November 2014, Düsseldorf.jpg",
+"author": "M 93",
+"license": "CC BY-SA 3.0 de",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Jeep_Renegade_1.6_MultiJet_2WD_Longitude_%E2%80%93_Heckansicht,_9._November_2014,_D%C3%BCsseldorf.jpg"
+},
+{
+"img": "img/jeep-renegade-head.webp",
+"car": "jeep-renegade",
+"part": "head",
+"file": "Jeep Renegade 1.6 MultiJet 2WD Longitude – Frontansicht, 9. November 2014, Düsseldorf.jpg",
+"author": "M 93",
+"license": "CC BY-SA 3.0 de",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Jeep_Renegade_1.6_MultiJet_2WD_Longitude_%E2%80%93_Frontansicht,_9._November_2014,_D%C3%BCsseldorf.jpg"
+},
+{
+"img": "img/jeep-renegade-interior.webp",
+"car": "jeep-renegade",
+"part": "interior",
+"file": "Jeep Renegade - wnętrze (MSP16).jpg",
+"author": "Jakub \"Flyz1\" Maciejewski",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Jeep_Renegade_-_wn%C4%99trze_(MSP16).jpg"
+},
+{
+"img": "img/lada-niva-tail.webp",
+"car": "lada-niva",
+"part": "tail",
+"file": "LADA 4×4 rear.JPG",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:LADA_4%C3%974_rear.JPG"
+},
+{
+"img": "img/lada-niva-head.webp",
+"car": "lada-niva",
+"part": "head",
+"file": "2016 Lada Niva Urban (Sweden), front right.jpg",
+"author": "Mr.choppers",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:2016_Lada_Niva_Urban_(Sweden),_front_right.jpg"
+},
+{
+"img": "img/lada-niva-interior.webp",
+"car": "lada-niva",
+"part": "interior",
+"file": "Innenraum Lada Niva Legend ab 2021.jpg",
+"author": "DerSporti",
+"license": "CC BY 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Innenraum_Lada_Niva_Legend_ab_2021.jpg"
+},
+{
+"img": "img/lada-samara-tail.webp",
+"car": "lada-samara",
+"part": "tail",
+"file": "1988 Lada Samara 1300 red rear.jpg",
+"author": "Danjer",
+"license": "CC BY 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:1988_Lada_Samara_1300_red_rear.jpg"
+},
+{
+"img": "img/lada-samara-head.webp",
+"car": "lada-samara",
+"part": "head",
+"file": "2000 VAZ 21093 light blue front.jpg",
+"author": "Throwawayacc222",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:2000_VAZ_21093_light_blue_front.jpg"
+},
+{
+"img": "img/lambo-aventador-tail.webp",
+"car": "lambo-aventador",
+"part": "tail",
+"file": "Aventador LP700-4 Rear View.jpg",
+"author": "Tommaso from Roma, Italia",
+"license": "CC BY 2.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+"source": "https://commons.wikimedia.org/wiki/File:Aventador_LP700-4_Rear_View.jpg"
+},
+{
+"img": "img/lambo-aventador-head.webp",
+"car": "lambo-aventador",
+"part": "head",
+"file": "Lamborghini Aventador front with scissor doors up and Transparent Engine Bonnet.JPG",
+"author": "Tuner tom",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Lamborghini_Aventador_front_with_scissor_doors_up_and_Transparent_Engine_Bonnet.JPG"
+},
+{
+"img": "img/lambo-aventador-interior.webp",
+"car": "lambo-aventador",
+"part": "interior",
+"file": "Geneva MotorShow 2013 - Lamborghini Aventador steering wheel.jpg",
+"author": "Clément Bucco-Lechat",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Lamborghini_Aventador_steering_wheel.jpg"
+},
+{
+"img": "img/lambo-revuelto-tail.webp",
+"car": "lambo-revuelto",
+"part": "tail",
+"file": "2024 Lamborghini Revuelto 13.jpg",
+"author": "Calreyn88",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_Lamborghini_Revuelto_13.jpg"
+},
+{
+"img": "img/lambo-revuelto-head.webp",
+"car": "lambo-revuelto",
+"part": "head",
+"file": "2024 Lamborghini Revuelto 2.jpg",
+"author": "Calreyn88",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2024_Lamborghini_Revuelto_2.jpg"
+},
+{
+"img": "img/lambo-urus-tail.webp",
+"car": "lambo-urus",
+"part": "tail",
+"file": "2019 Lamborghini Urus V8 Automatic 4.0 Rear.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2019_Lamborghini_Urus_V8_Automatic_4.0_Rear.jpg"
+},
+{
+"img": "img/lambo-urus-head.webp",
+"car": "lambo-urus",
+"part": "head",
+"file": "2019 Lamborghini Urus, front 7.20.19.jpg",
+"author": "Kevauto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2019_Lamborghini_Urus,_front_7.20.19.jpg"
+},
+{
+"img": "img/lexus-lc-tail.webp",
+"car": "lexus-lc",
+"part": "tail",
+"file": "2023 Lexus LC 500 in White Nova Glass Flake, rear right.jpg",
+"author": "Ethan Llamas",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2023_Lexus_LC_500_in_White_Nova_Glass_Flake,_rear_right.jpg"
+},
+{
+"img": "img/lexus-lc-head.webp",
+"car": "lexus-lc",
+"part": "head",
+"file": "2023 Lexus LC 500 in White Nova Glass Flake, front right.jpg",
+"author": "Ethan Llamas",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2023_Lexus_LC_500_in_White_Nova_Glass_Flake,_front_right.jpg"
+},
+{
+"img": "img/lexus-lc-interior.webp",
+"car": "lexus-lc",
+"part": "interior",
+"file": "LC 500 interior IMG 3347.jpg",
+"author": "Carsfera",
+"license": "CC BY 2.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+"source": "https://commons.wikimedia.org/wiki/File:LC_500_interior_IMG_3347.jpg"
+},
+{
+"img": "img/lexus-rx-4-tail.webp",
+"car": "lexus-rx-4",
+"part": "tail",
+"file": "Lexus RX300 AWD\"version L\" (DBA-AGL25W-AWTGZ(L)) rear.jpg",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Lexus_RX300_AWD%22version_L%22_(DBA-AGL25W-AWTGZ(L))_rear.jpg"
+},
+{
+"img": "img/lexus-rx-4-head.webp",
+"car": "lexus-rx-4",
+"part": "head",
+"file": "2016 Lexus RX 200t front view.jpg",
+"author": "Kārlis Dambrāns",
+"license": "CC BY 2.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+"source": "https://commons.wikimedia.org/wiki/File:2016_Lexus_RX_200t_front_view.jpg"
+},
+{
+"img": "img/lexus-rx-4-interior.webp",
+"car": "lexus-rx-4",
+"part": "interior",
+"file": "2016 Lexus RX 200t interior.jpg",
+"author": "Kārlis Dambrāns",
+"license": "CC BY 2.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+"source": "https://commons.wikimedia.org/wiki/File:2016_Lexus_RX_200t_interior.jpg"
+},
+{
+"img": "img/maserati-ghibli-3-tail.webp",
+"car": "maserati-ghibli-3",
+"part": "tail",
+"file": "2015 Maserati Ghibli V6 Automatic 3.0 Rear.jpg",
+"author": "Makizox",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2015_Maserati_Ghibli_V6_Automatic_3.0_Rear.jpg"
+},
+{
+"img": "img/maserati-ghibli-3-head.webp",
+"car": "maserati-ghibli-3",
+"part": "head",
+"file": "Maserati Ghibli III front.jpg",
+"author": "El monty",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:Maserati_Ghibli_III_front.jpg"
+},
+{
+"img": "img/maserati-ghibli-3-interior.webp",
+"car": "maserati-ghibli-3",
+"part": "interior",
+"file": "2018 Maserati Ghibli Diesel GranSport Interior.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2018_Maserati_Ghibli_Diesel_GranSport_Interior.jpg"
+},
+{
+"img": "img/maserati-levante-tail.webp",
+"car": "maserati-levante",
+"part": "tail",
+"file": "2018 Maserati Levante V6 Automatic 3.0 Rear.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2018_Maserati_Levante_V6_Automatic_3.0_Rear.jpg"
+},
+{
+"img": "img/maserati-levante-head.webp",
+"car": "maserati-levante",
+"part": "head",
+"file": "2018 Maserati Levante V6 Automatic 3.0 Front.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2018_Maserati_Levante_V6_Automatic_3.0_Front.jpg"
+},
+{
+"img": "img/maserati-levante-interior.webp",
+"car": "maserati-levante",
+"part": "interior",
+"file": "2019 Maserati Levante Trofeo V8 Interior.jpg",
+"author": "GinaCostanza76",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2019_Maserati_Levante_Trofeo_V8_Interior.jpg"
+},
+{
+"img": "img/maserati-mc20-tail.webp",
+"car": "maserati-mc20",
+"part": "tail",
+"file": "2023 Maserati MC20 in Digital Mint, rear right.jpg",
+"author": "Mr.choppers",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:2023_Maserati_MC20_in_Digital_Mint,_rear_right.jpg"
+},
+{
+"img": "img/maserati-mc20-head.webp",
+"car": "maserati-mc20",
+"part": "head",
+"file": "Maserati MC20 (7BA-MC30) front.jpg",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Maserati_MC20_(7BA-MC30)_front.jpg"
+},
+{
+"img": "img/mclaren-720s-tail.webp",
+"car": "mclaren-720s",
+"part": "tail",
+"file": "2018 McLaren 720S 10.jpg",
+"author": "Calreyn88",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2018_McLaren_720S_10.jpg"
+},
+{
+"img": "img/mclaren-720s-head.webp",
+"car": "mclaren-720s",
+"part": "head",
+"file": "2019 McLaren 720S front, Miller 2.1.20.jpg",
+"author": "Kevauto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2019_McLaren_720S_front,_Miller_2.1.20.jpg"
+},
+{
+"img": "img/mg-4-tail.webp",
+"car": "mg-4",
+"part": "tail",
+"file": "MG Mulan 002.jpg",
+"author": "JustAnotherCarDesigner",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:MG_Mulan_002.jpg"
+},
+{
+"img": "img/mg-4-head.webp",
+"car": "mg-4",
+"part": "head",
+"file": "MG Mulan IMG001.jpg",
+"author": "Zotyefan",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:MG_Mulan_IMG001.jpg"
+},
+{
+"img": "img/mg-hs-tail.webp",
+"car": "mg-hs",
+"part": "tail",
+"file": "2019 MG HS Turbo X (Rear).jpg",
+"author": "Chanokchon",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2019_MG_HS_Turbo_X_(Rear).jpg"
+},
+{
+"img": "img/mg-hs-head.webp",
+"car": "mg-hs",
+"part": "head",
+"file": "2020 MG HS Ignite (Indonesia) front view 02.jpg",
+"author": "Andra Febrian",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2020_MG_HS_Ignite_(Indonesia)_front_view_02.jpg"
+},
+{
+"img": "img/mg-hs-interior.webp",
+"car": "mg-hs",
+"part": "interior",
+"file": "2020 MG HS 1.5 COM interior view in Brunei.jpg",
+"author": "AIMHO'S REBELLION 8490s",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2020_MG_HS_1.5_COM_interior_view_in_Brunei.jpg"
+},
+{
+"img": "img/porsche-718-tail.webp",
+"car": "porsche-718",
+"part": "tail",
+"file": "Porsche 718 Boxster GTS 4.0 (type 982) rear.jpg",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Porsche_718_Boxster_GTS_4.0_(type_982)_rear.jpg"
+},
+{
+"img": "img/porsche-718-head.webp",
+"car": "porsche-718",
+"part": "head",
+"file": "2018 Porsche 718 Boxster, front right, 08-17-2023.jpg",
+"author": "MercurySable99",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2018_Porsche_718_Boxster,_front_right,_08-17-2023.jpg"
+},
+{
+"img": "img/porsche-718-interior.webp",
+"car": "porsche-718",
+"part": "interior",
+"file": "Inside of a Porsche 718.jpg",
+"author": "Nashucks",
+"license": "CC0",
+"licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+"source": "https://commons.wikimedia.org/wiki/File:Inside_of_a_Porsche_718.jpg"
+},
+{
+"img": "img/rolls-cullinan-tail.webp",
+"car": "rolls-cullinan",
+"part": "tail",
+"file": "2019 Rolls-Royce Cullinan V12 Automatic 6.75 Rear.jpg",
+"author": "Vauxford",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2019_Rolls-Royce_Cullinan_V12_Automatic_6.75_Rear.jpg"
+},
+{
+"img": "img/rolls-cullinan-head.webp",
+"car": "rolls-cullinan",
+"part": "head",
+"file": "2023 Rolls-Royce Cullinan in light blue, front left.jpg",
+"author": "Mr.choppers",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:2023_Rolls-Royce_Cullinan_in_light_blue,_front_left.jpg"
+},
+{
+"img": "img/rolls-cullinan-interior.webp",
+"car": "rolls-cullinan",
+"part": "interior",
+"file": "Rolls Royce Cullinan Center Console.jpg",
+"author": "Kārlis Dambrāns",
+"license": "CC BY 2.0",
+"licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+"source": "https://commons.wikimedia.org/wiki/File:Rolls_Royce_Cullinan_Center_Console.jpg"
+},
+{
+"img": "img/rolls-phantom-8-head.webp",
+"car": "rolls-phantom-8",
+"part": "head",
+"file": "2018 Rolls-Royce Phantom in Silver with Black roof, front right.jpg",
+"author": "Mr.choppers",
+"license": "CC BY-SA 3.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+"source": "https://commons.wikimedia.org/wiki/File:2018_Rolls-Royce_Phantom_in_Silver_with_Black_roof,_front_right.jpg"
+},
+{
+"img": "img/tesla-model-s-tail.webp",
+"car": "tesla-model-s",
+"part": "tail",
+"file": "2014 Tesla Model S 85, Rear Right, 07-27-2021.jpg",
+"author": "Elise240SX",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2014_Tesla_Model_S_85,_Rear_Right,_07-27-2021.jpg"
+},
+{
+"img": "img/tesla-model-s-head.webp",
+"car": "tesla-model-s",
+"part": "head",
+"file": "20180630 Tesla Model S 70D 2015 midnight blue left front.jpg",
+"author": "Granada",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:20180630_Tesla_Model_S_70D_2015_midnight_blue_left_front.jpg"
+},
+{
+"img": "img/tesla-model-x-tail.webp",
+"car": "tesla-model-x",
+"part": "tail",
+"file": "2017 Tesla Model X rear 5.27.18.jpg",
+"author": "Kevauto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2017_Tesla_Model_X_rear_5.27.18.jpg"
+},
+{
+"img": "img/tesla-model-x-head.webp",
+"car": "tesla-model-x",
+"part": "head",
+"file": "2017 Tesla Model X front 5.27.18.jpg",
+"author": "Kevauto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2017_Tesla_Model_X_front_5.27.18.jpg"
+},
+{
+"img": "img/tesla-model-x-interior.webp",
+"car": "tesla-model-x",
+"part": "interior",
+"file": "Interno tesla model x.jpg",
+"author": "Numobeer",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Interno_tesla_model_x.jpg"
+},
+{
+"img": "img/tesla-model-y-tail.webp",
+"car": "tesla-model-y",
+"part": "tail",
+"file": "2022 Tesla Model Y Long Range All-Wheel Drive in Pearl White Multi-Coat, rear left, 2024-11-20.jpg",
+"author": "Elise240SX",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2022_Tesla_Model_Y_Long_Range_All-Wheel_Drive_in_Pearl_White_Multi-Coat,_rear_left,_2024-11-20.jpg"
+},
+{
+"img": "img/tesla-model-y-head.webp",
+"car": "tesla-model-y",
+"part": "head",
+"file": "2020 Tesla Model Y, front 5.16.21.jpg",
+"author": "Kevauto",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2020_Tesla_Model_Y,_front_5.16.21.jpg"
+},
+{
+"img": "img/tesla-model-y-interior.webp",
+"car": "tesla-model-y",
+"part": "interior",
+"file": "Tesla Model Y 2025 interior.jpg",
+"author": "Ethan Llamas",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_2025_interior.jpg"
+},
+{
+"img": "img/toyota-corolla-cross-tail.webp",
+"car": "toyota-corolla-cross",
+"part": "tail",
+"file": "2022 Toyota Corolla Cross L AWD, Rear Right, 11-21-2021.jpg",
+"author": "Elise240SX",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2022_Toyota_Corolla_Cross_L_AWD,_Rear_Right,_11-21-2021.jpg"
+},
+{
+"img": "img/toyota-corolla-cross-head.webp",
+"car": "toyota-corolla-cross",
+"part": "head",
+"file": "2022 Toyota Corolla Cross L AWD, Front Left, 11-21-2021.jpg",
+"author": "Elise240SX",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2022_Toyota_Corolla_Cross_L_AWD,_Front_Left,_11-21-2021.jpg"
+},
+{
+"img": "img/toyota-corolla-cross-interior.webp",
+"car": "toyota-corolla-cross",
+"part": "interior",
+"file": "2022 Toyota Corolla Cross 1.8AT High white interior in Brunei.jpg",
+"author": "AIMHO'S REBELLION 8490s",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:2022_Toyota_Corolla_Cross_1.8AT_High_white_interior_in_Brunei.jpg"
+},
+{
+"img": "img/toyota-prius-4-tail.webp",
+"car": "toyota-prius-4",
+"part": "tail",
+"file": "Toyota PRIUS A Premium (DAA-ZVW51-AHXHB) rear.JPG",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Toyota_PRIUS_A_Premium_(DAA-ZVW51-AHXHB)_rear.JPG"
+},
+{
+"img": "img/toyota-prius-4-head.webp",
+"car": "toyota-prius-4",
+"part": "head",
+"file": "Toyota PRIUS A Premium (DAA-ZVW51-AHXHB) front.JPG",
+"author": "Tokumeigakarinoaoshima",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Toyota_PRIUS_A_Premium_(DAA-ZVW51-AHXHB)_front.JPG"
+},
+{
+"img": "img/toyota-prius-4-interior.webp",
+"car": "toyota-prius-4",
+"part": "interior",
+"file": "Prius4 Dashboard IMG 6871.JPG",
+"author": "Hans Haase",
+"license": "CC BY-SA 4.0",
+"licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+"source": "https://commons.wikimedia.org/wiki/File:Prius4_Dashboard_IMG_6871.JPG"
 }
 ]

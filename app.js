@@ -238,9 +238,9 @@
   /* ---------- ana sayfa ---------- */
   // Kategori kartlarında vitrin: ikonik ve pahalı araçlardan seçilmiş kareler, her gün biri.
   const SHOWCASE = {
-    a: ['ford-mustang-s550-tail', 'nissan-gtr-r35-tail', 'mini-hatch-f56-tail', 'mazda-mx5-nd-tail'],
-    f: ['ford-mustang-s550-head', 'porsche-911-992-head', 'nissan-gtr-r35-head', 'bmw-x5-g05-head', 'mini-hatch-f56-head'],
-    k: ['lambo-huracan-interior', 'porsche-911-992-interior', 'ford-mustang-s550-interior', 'mercedes-e-w213-interior', 'bmw-x5-g05-interior', 'rr-evoque-l551-interior'],
+    a: ['lambo-aventador-tail', 'chevrolet-corvette-c8-tail', 'mclaren-720s-tail', 'ferrari-roma-tail', 'ford-mustang-s550-tail'],
+    f: ['ferrari-296-head', 'bugatti-chiron-head', 'rolls-cullinan-head', 'mclaren-720s-head', 'porsche-911-992-head'],
+    k: ['ferrari-roma-interior', 'aston-db11-interior', 'lambo-huracan-interior', 'porsche-911-992-interior', 'bentley-continental-3-interior'],
   };
   function catThumb(cat) {
     const list = SHOWCASE[cat].filter(n => CRED[n]);

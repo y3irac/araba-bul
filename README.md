@@ -64,8 +64,8 @@ Soru sırasında ekranda reklam yok. AdSense başvurusu için sitenin kendi alan
 | `config.js` | Site adresi ve reklam ayarları |
 | `styles.css` | Açık tema ve tüm ekranlar |
 | `app.js` | Oyun motoru: kategoriler, seviyeler, Günün Turu, meydan okuma, görevler, garaj |
-| `data.js` | 401 araçlık katalog ve fotoğraf hakları (`tools/build_data.py` üretir) |
-| `img/` | 1124 kare, 800×600 WebP: `-tail` stop, `-head` far, `-interior` kokpit. Amblem, model yazısı ve plakalar kapatıldı |
+| `data.js` | 460 araçlık katalog ve fotoğraf hakları (`tools/build_data.py` üretir) |
+| `img/` | 1272 kare, 800×600 WebP: `-tail` stop, `-head` far, `-interior` kokpit. Amblem, model yazısı ve plakalar kapatıldı |
 | `credits.json` | Her fotoğrafın yazarı, lisansı ve Wikimedia Commons sayfası |
 | `sw.js`, `manifest.webmanifest`, `icons/` | PWA: çevrimdışı çalışma ve ana ekran ikonu |
 | `tools/kutuphane.json` | Wikidata'dan 40 markanın 4.735 modeli (ileride yeni araç seçmek için) |
@@ -80,4 +80,4 @@ Soru sırasında ekranda reklam yok. AdSense başvurusu için sitenin kendi alan
 
 ## Fotoğraflar
 
-415 fotoğrafın tamamı Wikimedia Commons'tan, özgür lisanslı. Oyunda Garaj → Fotoğraf hakları bölümünde ve her cevaptan sonra fotoğrafın altında yazar ve lisans görünür. CC BY-SA lisanslı kareler kırpılıp değiştirildiği için aynı lisansla paylaşılmalı.
+Fotoğrafların tamamı Wikimedia Commons'tan, özgür lisanslı. Oyunda Garaj → Fotoğraf hakları bölümünde ve her cevaptan sonra fotoğrafın altında yazar ve lisans görünür. CC BY-SA lisanslı kareler kırpılıp değiştirildiği için aynı lisansla paylaşılmalı.
