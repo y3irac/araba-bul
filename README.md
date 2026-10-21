@@ -64,8 +64,8 @@ Soru sırasında ekranda reklam yok. AdSense başvurusu için sitenin kendi alan
 | `config.js` | Site adresi ve reklam ayarları |
 | `styles.css` | Açık tema ve tüm ekranlar |
 | `app.js` | Oyun motoru: kategoriler, seviyeler, Günün Turu, meydan okuma, görevler, garaj |
-| `data.js` | 242 araçlık katalog ve fotoğraf hakları (`tools/build_data.py` üretir) |
-| `img/` | 680 kare, 800×600 WebP: `-tail` stop, `-head` far, `-interior` kokpit. Amblem, model yazısı ve plakalar kapatıldı |
+| `data.js` | 262 araçlık katalog ve fotoğraf hakları (`tools/build_data.py` üretir) |
+| `img/` | 731 kare, 800×600 WebP: `-tail` stop, `-head` far, `-interior` kokpit. Amblem, model yazısı ve plakalar kapatıldı |
 | `credits.json` | Her fotoğrafın yazarı, lisansı ve Wikimedia Commons sayfası |
 | `sw.js`, `manifest.webmanifest`, `icons/` | PWA: çevrimdışı çalışma ve ana ekran ikonu |
 | `tools/kutuphane.json` | Wikidata'dan 40 markanın 4.735 modeli (ileride yeni araç seçmek için) |
